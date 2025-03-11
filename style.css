@@ -101,3 +101,27 @@ img:hover{
     transition: ease-in-out 0.6s;
     opacity: 0.8;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .overall-container {
+        flex-direction: column; /* Stack containers vertically on smaller screens */
+        height: auto; /* Adjust height for vertical stacking */
+    }
+
+    .container-left, .container-right {
+        width: 100%; /* Full width for each container */
+        height: auto; /* Adjust height for content */
+    }
+
+    .product-image img, .container-right {
+        height: auto; /* Adjust height for content */
+        width: 100%; /* Full width for each container */
+        border-radius: 20px; /* Adjust border-radius for vertical stacking */
+    }
+
+    .container-right {
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin: 0; /* Remove margins for smaller screens */
+    }
+}
